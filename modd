@@ -1,0 +1,102 @@
+* {
+  box-sizing : border-box;
+}
+
+corps {
+	marge :  0 ;
+	rembourrage :  0 ;
+  font-family :  "Comic Sans MS" , cursive , sans-serif;
+}
+
+. ligne {
+  marge-haut :  5 % ;
+  marge-bas :  5 % ;
+}
+
+h1 {
+  marge-bas :  15 px ;
+  text-align : center;
+  couleur :  # ff4532 ;
+  taille de police :  50 px ;
+}
+
+
+. boîte {
+  largeur :  100 % ;
+  débordement : aucun ;
+}
+
+
+. nom_contenu {
+  débordement : aucun ;
+  text-align : center;
+  bordure :  4 px noir uni ;
+  largeur :  100 px ;
+  hauteur :  40 px ;
+  rembourrage :  5 px ;
+  float : droite;
+  marge droite :  36 px ;
+  marge-haut :  0 px ;
+  font-weight : gras;
+  position : relative ;
+}
+
+. contenu {
+  bordure :  5 px noir uni ;
+  largeur :  90 % ;
+  hauteur : automatique ;
+  marge :  2,5 % ;
+  couleur : noir
+  taille de police : 25 px ;
+  rembourrage :  2 % ;
+  padding-top :  55 px ;
+  couleur de fond :  rgba ( 0 , 0 , 0 , 0.3 );
+}
+
+. nom1 {
+  couleur de fond :  # FFB6C1 ;
+}
+
+. nom2 {
+  couleur : blanc;
+  couleur de fond :  # FF0000 ;
+}
+. nom3 {
+  couleur de fond :  # FFFF00 ;
+}
+
+
+/*********** Gros appareils uniquement **********/
+@media ( min-width :  992 px ) {
+  . col-lg-4 {
+  	flotteur : gauche ;
+    largeur :  33,33 % ;
+  }
+}
+/*********** Appareils moyens uniquement **********/
+@media ( min-width :  768 px ) et ( max-width :  991 px ) {
+  . col-md-6 , . col-md-12 {
+    flotteur : gauche ;
+  }
+  . col-md-6 {
+    largeur :  50 % ;
+  }
+  . col-md-12 {
+    marge-gauche :  -10 px ;
+    largeur :  100 % ;
+  }
+  . nom3 {
+    marge droite :  65 px ;
+    largeur :  100 px ;
+  }
+}
+
+@media ( min-width :  0 px ) et ( max-width :  767 px ) {
+  . col-sm-12 {
+  	flotteur : gauche ;
+    largeur :  100 % ;
+  }
+  . nom_contenu {
+    marge droite :  30 px ;
+  }
+}
